@@ -1,0 +1,14 @@
+import cv2
+img=cv2.imread("l4/ash.png")
+start=(50,60)
+
+end=(150,250)
+color=(0,255,0)
+thichness=-6
+
+image=cv2.rectangle(img,start,end,color,thichness)
+
+cv2.imshow("rectangle",image)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
